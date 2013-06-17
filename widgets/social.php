@@ -33,7 +33,7 @@ class cgc_social_widget extends WP_Widget {
 		<div class="icons-widget">
 			<?php if ( $icons_title ) echo $before_title . $icons_title . $after_title; ?>
 					
-			<div id="icons">
+			<div id="icons" class="social-links">
 				<?php if ( $twitter_icon ) { ?>								
 					<a href="<?php echo $instance['twitter_icon']; ?>" class="twitter-icon" title="Twitter">
 						<i class="icon-twitter"></i>
@@ -48,10 +48,7 @@ class cgc_social_widget extends WP_Widget {
 				
 				<?php if ( $youtube_icon ) { ?>								
 					<a href="<?php echo $instance['youtube_icon']; ?>" class="youtube-icon" title="YouTube">
-						<span class="icon-stack">
-							<i class="icon-sign-blank icon-stack-base"></i>
-							<i class="icon-play icon-dark"></i>
-						</span>
+						<i class="icon-youtube-play"></i>
 					</a>
 				<?php } ?>
 
